@@ -4,6 +4,10 @@
 	Part of the Open Pastebin project - version 0.2-development
 	10/8/2004
 	Ville Särkkälä - villeveikko@users.sourceforge.net
+    
+    Changes made by
+    04/28/2009
+    Joshua T - http://digitalundernet.com 
 	
 	A relatively generic XML parser.
 	

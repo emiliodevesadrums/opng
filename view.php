@@ -4,6 +4,10 @@
 	Part of the Open Pastebin project - version 0.2-development
 	10/8/2004
 	Ville Särkkälä - villeveikko@users.sourceforge.net
+    
+    Changes made by
+    04/28/2009
+    Joshua T - http://digitalundernet.com 
 
 	The ID is given as a query string, for example:
 	http://domain.com/pastebin/view.php?id=349
@@ -16,9 +20,12 @@
 	Version 2, June 1991 -  or later
 */?>
 
-<html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
     <head>
+        <meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
         <title>Open Pastebin NG</title>
+        <style type="text/css" media="all">@import "main.css";</style>
     </head>
     <body>
         <?php
@@ -30,7 +37,8 @@
             $array = database_retrieve ( $_REQUEST['id'] );
 
             $text = htmlentities ( $array ['Text'] );
-
+            $topic = htmlentities ( $array ['Topic'] );
+            $language = htmlentities ( $array ['language']);
             $xml_parser = new CXmlParser;
             $rules = $xml_parser->parse ( "rules.xml" );
             $highlighted_text = apply_rule ( $rules ['RULE'][$array ['Language']], $text );
@@ -38,6 +46,13 @@
             $lines = explode ( "\n", $highlighted_text );
         ?>
         <table border="1" cellpadding="2">
+            <tr>
+                <td>
+                    <?php
+                        print ( "Topic: ". $array['Topic'] );
+                    ?>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <?php
@@ -82,6 +97,9 @@
             </tr>
         </table>
         <form method="post" action="submit.php">
+                Topic:<input type="text" name="input_topic" value="RE:<?php
+                print ( $topic );
+            ?>"><br />
             <input type="hidden" name="input_language" value="<?php
                 print ( $array ['Language'] );
             ?>">
@@ -92,5 +110,6 @@
             <br><br>
             <input type="submit" value="Submit">
         </form>
+        <p>Return to the <a href="index.php">index</a></p>
     </body>
 </html>
