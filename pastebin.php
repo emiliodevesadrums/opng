@@ -4,6 +4,10 @@
 	Part of the Open Pastebin project - version 0.2-development
 	10/8/2004
 	Ville Särkkälä - villeveikko@users.sourceforge.net
+	
+	Changes made by
+	04/28/2009
+	Joshua T - http://digitalundernet.com
 
 	This is the main/index page. It allows the user to enter
 	the text, and then goes to submit.php.
@@ -12,10 +16,13 @@
 	Version 2, June 1991 -  or later
 */?>
 
-<html>
-    <head>
-        <title>Open Pastebin NG</title>
-    </head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+		<title>Open Pastebin NG</title>
+		<style type="text/css" media="all">@import "main.css";</style>
+	</head>
     <body>
         <h1>Open Pastebin NG<h1>
         <h2>Paste it =) !!</h2>
@@ -26,6 +33,7 @@
             $document = $xml_parser->parse ( "rules.xml" );
         ?>
         <form method="post" action="submit.php">
+            Topic:<input type="text" name="input_topic"><br />
             Select language:<br>
             <select name="input_language">
             <?php
@@ -43,6 +51,6 @@
             <input type="submit" value="Submit">
         </form>
         <a href="http://www.sourceforge.net/projects/openpastebin/">Based on Open Pastebin</a><br>
-        <a href="http://opng.sadhill.net/">Powered by Open Pastebin NG</a>
+        <a href="http://emiliodevesa.wordpress.com/opng">Powered by Open Pastebin NG</a>
     </body>
 </html>
