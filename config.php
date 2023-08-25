@@ -11,7 +11,7 @@
 	Version 2, June 1991 -  or later
 
 	05/10/2016
-	Modified by Emilio Devesa - edevmon@gmail.com
+	Modified by Emilio Devesa - https://emiliodevesa.wordpress.com
 	Improvements by Jarett Stevens applied (jarett.stevens@gmail.com)
 	Now jumping to v0.4
 	

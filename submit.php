@@ -14,16 +14,16 @@
   --
   
   09/31/2010
-  Modified by Emilio Devesa - edevmon@gmail.com
+  Modified by Emilio Devesa - https://emiliodevesa.wordpress.com
   Added a Short URL link feature, using David Walsh code
   and is.gd short-url service.
   
   09/30/2010
-  Modified by Emilio Devesa - edevmon@gmail.com
+  Modified by Emilio Devesa - https://emiliodevesa.wordpress.com
   Changed to improve privacy by hashing the resulting URLs
 
   05/10/2016
-  Modified by Emilio Devesa - edevmon@gmail.com
+  Modified by Emilio Devesa - https://emiliodevesa.wordpress.com
   Improvements by Jarett Stevens applied (jarett.stevens@gmail.com)
   Now jumping to v0.4
   
