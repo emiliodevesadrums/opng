@@ -23,11 +23,11 @@ service
 
 ## Screenshots
 
-![Pastebin](https://raw.githubusercontent.com/emilio-devesa/opng/dev/res/pastebin.png)
+![Pastebin](https://raw.githubusercontent.com/emiliodevesadrums/opng/dev/res/pastebin.png)
 
-![Submit](https://raw.githubusercontent.com/emilio-devesa/opng/dev/res/submit.png)
+![Submit](https://raw.githubusercontent.com/emiliodevesadrums/opng/dev/res/submit.png)
 
-![Viewer](https://raw.githubusercontent.com/emilio-devesa/opng/dev/res/view.png)
+![Viewer](https://raw.githubusercontent.com/emiliodevesadrums/opng/dev/res/view.png)
 
 ## Requirements
 
